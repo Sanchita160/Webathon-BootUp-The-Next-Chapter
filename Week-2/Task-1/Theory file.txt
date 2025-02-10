@@ -1,1 +1,156 @@
+(5).  Explain the difference between null and undefined in JavaScript.
+Soln:-In JavaScript, null and undefined are two primitive values that are often confused with each other. Here's a detailed explanation of the differences:
+
+# Null
+- null is a primitive value that represents the absence of any object value.
+- It is a deliberate assignment of "no value" to a variable.
+- null is an object type (although it's a primitive value).
+
+# Undefined
+- undefined is a primitive value that represents an uninitialized or non-existent variable.
+- It is the default value of a variable that has been declared but not assigned a value.
+- undefined is a type of its own.
+
+
+
+
+
+(6).  What is the difference between var, let, and const in JavaScript?
+Soln:-In JavaScript, var, let, and const are three types of declarations used to declare variables. While they may seem similar, they have distinct differences in terms of scope, hoisting, and reassignment.
+
+Var
+- Scope: Function scope (local or global)
+- Hoisting: Hoisted to the top of the scope (function or global)
+- Reassignment: Can be reassigned
+- Redeclaration: Can be redeclared
+
+Let
+- Scope: Block scope (local)
+- Hoisting: Hoisted to the top of the block, but not initialized until declared
+- Reassignment: Can be reassigned
+- Redeclaration: Cannot be redeclared in the same scope
+
+Const
+- Scope: Block scope (local)
+- Hoisting: Hoisted to the top of the block, but not initialized until declared
+- Reassignment: Cannot be reassigned
+- Redeclaration: Cannot be redeclared in the same scope
+
+
+
+
+
+
+(7).  What is a callback function, and why is it important in JavaScript?
+Soln:-In JavaScript, a callback function is a function that is passed as an argument to another function, to be executed by that function at a later time. 
+The callback function is essentially a function that is "called back" by another function.
+
+  a. Asynchronous programming: JavaScript is an asynchronous language, meaning that it can execute multiple tasks simultaneously.
+     Callback functions are essential for handling asynchronous operations, such as network requests, database queries, or timer events.
+  b. Event handling: Callback functions are used to handle events, such as mouse clicks, keyboard input, or page loads.
+  c. Modularity: Callback functions promote modularity by allowing functions to be composed together, making it easier to reuse code.
+  d. Error handling: Callback functions can be used to handle errors that occur during asynchronous operations.
+
+
+
+
+
+
+(8).  How many loops in JavaScript, and how do they work?
+Soln:-In JavaScript, there are several types of loops that allow you to execute a block of code repeatedly. Here are the most common types of loops in JavaScript:
+
+# a. For Loop
+A "for" loop is used to iterate over a block of code for a specified number of times.
+
+Syntax:
+for (initialization; condition; increment) {
+  // code to be executed
+}
+
+Example:
+for (let i = 0; i < 5; i++) {
+  console.log(i);
+}
+
+
+# b. While Loop
+A "while" loop is used to execute a block of code as long as a specified condition is true.
+
+Syntax:
+while (condition) {
+  // code to be executed
+}
+
+Example:
+let i = 0;
+while (i < 5) {
+  console.log(i);
+  i++;
+}
+
+
+# c. Do-While Loop
+A "do-while" loop is similar to a `while` loop, but the code block is executed at least once before the condition is checked.
+
+Syntax:
+do {
+  // code to be executed
+} while (condition);
+
+Example:
+let i = 0;
+do {
+  console.log(i);
+  i++;
+} while (i < 5);
+
+
+
+
+
+
+(14).	What are functions in JavaScript, and how do you declare them?
+Soln:-In JavaScript, a function is a block of code that can be executed multiple times from different parts of your program.
+ Functions are useful for performing repetitive tasks, and they help to make your code more organized, reusable, and maintainable.
+
+# Types of Functions in JavaScript
+There are several types of functions in JavaScript:
+
+   a. Function Declaration: A function declaration is a statement that defines a function.
+   b. Function Expression: A function expression is an expression that defines a function.
+   c. Arrow Function: An arrow function is a concise way to define a function.
+   d. Method: A method is a function that is a property of an object.
+
+# Declaring Functions in JavaScript
+Here are the different ways to declare functions in JavaScript:
+
+   a. Function Declaration
+
+   function greet(name) {
+     console.log(`Hello, ${name}!`);
+    }
+
+
+    b. Function Expression
+
+    const greet = function(name) {
+      console.log(`Hello, ${name}!`);
+    };
+
+
+    c. Arrow Function
+
+    const greet = (name) => {
+    console.log(`Hello, ${name}!`);
+    };
+
+
+    d. Method
+
+    const person = {
+    name: 'John',
+    greet: function() {
+       console.log(`Hello, my name is ${this.name}!`);
+     }
+    };
 
