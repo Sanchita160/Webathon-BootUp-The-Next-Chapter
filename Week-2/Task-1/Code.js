@@ -48,7 +48,7 @@ function calculateTotalBill(prices) {
 
 
 
-//10.	Wite a program to print pattern.
+//10.	Write a program to print pattern.
 	function printPattern(n) {
     for (let i = 1; i <= n; i++) {
         let row = "";
